@@ -130,6 +130,7 @@ ZEND_BEGIN_MODULE_GLOBALS(xdebug)
 
 	unsigned long level;
 	xdebug_llist *stack;
+	xend_long     remote_con_timeout;
 	zend_long     max_nesting_level;
 	zend_long     max_stack_frames;
 	zend_bool     default_enable;

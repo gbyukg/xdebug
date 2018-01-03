@@ -82,7 +82,7 @@ int xdebug_create_socket(const char *hostname, int dport TSRMLS_DC)
 	int                        sockfd;
 	int                        sockerror;
 	char                       sport[10];
-	int                        timeout = 200;
+	int                        timeout = XG(remote_con_timeout);
 	int                        actually_connected;
 	struct sockaddr_in6        sa;
 	socklen_t                  size = sizeof(sa);
